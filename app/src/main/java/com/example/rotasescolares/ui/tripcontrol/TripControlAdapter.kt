@@ -37,15 +37,15 @@ class TripControlAdapter(private val onStudentClicked: (Student) -> Unit) :
 
             when (student.status) {
                 StudentTripStatus.WAITING -> {
-                    binding.textViewStatus.text = "Waiting"
+                    binding.textViewStatus.text = "Esperando"
                     binding.cardStudent.setCardBackgroundColor(Color.LTGRAY)
                 }
                 StudentTripStatus.ON_BOARD -> {
-                    binding.textViewStatus.text = "On Board"
+                    binding.textViewStatus.text = "Entrou para viagem"
                     binding.cardStudent.setCardBackgroundColor(Color.GREEN)
                 }
                 StudentTripStatus.DROPPED_OFF -> {
-                    // Handled in the fragment to remove the item
+                    //
                 }
             }
         }

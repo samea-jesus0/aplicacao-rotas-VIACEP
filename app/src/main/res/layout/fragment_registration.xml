@@ -11,6 +11,7 @@
 
     <EditText
         android:id="@+id/nomeEditText"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nome" />
@@ -49,6 +50,8 @@
     <Button
         android:id="@+id/registrarButton"
         android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/blueeee"
         android:layout_height="wrap_content"
         android:text="Registrar" />
 

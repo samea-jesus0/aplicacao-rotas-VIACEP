@@ -5,35 +5,70 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/purple_200"
-    android:padding="16dp"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@android:color/white"
     tools:context=".ui.login.LoginFragment">
 
-    <EditText
-        android:id="@+id/emailEditText"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Email" />
+        android:text="Entrar"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/blueeee"
+        android:layout_marginBottom="32dp"/>
 
-    <EditText
-        android:id="@+id/senhaEditText"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Senha"
-        android:inputType="textPassword" />
+        app:boxStrokeColor="@color/purple_500"
+        app:boxBackgroundMode="outline">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/senhaLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:boxBackgroundMode="outline"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/senhaEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Senha"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/loginButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login" />
+        android:layout_marginTop="24dp"
+        android:text="Entrar"
+        android:backgroundTint="@color/blueeee"
+        android:textColor="@android:color/white"/>
 
     <TextView
         android:id="@+id/criarContaTextView"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="Criar uma conta"
-        android:textAlignment="center"
-        android:layout_marginTop="16dp"/>
+        android:textColor="@color/blueeee"
+        android:textStyle="bold"/>
 
 </LinearLayout>

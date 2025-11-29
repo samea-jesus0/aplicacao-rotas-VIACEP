@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 
-@Database(entities = [Usuario::class, School::class, Turma::class, TurmaAlunoCrossRef::class, Guardian::class, Student::class, Funcionario::class], version = 8, exportSchema = false)
+@Database(entities = [Usuario::class, School::class, Turma::class, TurmaAlunoCrossRef::class, Guardian::class, Student::class, Funcionario::class], version = 9, exportSchema = false)
 @TypeConverters(Converters::class)
 abstract class AppDatabase : RoomDatabase() {
 

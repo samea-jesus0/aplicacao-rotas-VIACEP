@@ -125,6 +125,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:backgroundTint="@color/blueeee"
             android:text="@string/save"
             app:layout_constraintTop_toBottomOf="@+id/text_input_layout_turno_funcionario"
             app:layout_constraintStart_toStartOf="parent"

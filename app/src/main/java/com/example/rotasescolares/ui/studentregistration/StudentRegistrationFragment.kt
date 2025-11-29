@@ -61,6 +61,8 @@ class StudentRegistrationFragment : Fragment() {
                 binding.editTextDob.setText(it.dateOfBirth)
                 binding.editTextCep.setText(it.cep)
                 binding.editTextLogradouro.setText(it.logradouro)
+                binding.editTextNumero.setText(it.numero)
+                binding.editTextComplemento.setText(it.complemento)
                 binding.editTextBairro.setText(it.bairro)
                 binding.editTextCidade.setText(it.cidade)
                 binding.editTextUf.setText(it.uf)
@@ -115,6 +117,8 @@ class StudentRegistrationFragment : Fragment() {
         val dateOfBirth = binding.editTextDob.text.toString()
         val cep = binding.editTextCep.text.toString()
         val logradouro = binding.editTextLogradouro.text.toString()
+        val numero = binding.editTextNumero.text.toString()
+        val complemento = binding.editTextComplemento.text.toString()
         val bairro = binding.editTextBairro.text.toString()
         val cidade = binding.editTextCidade.text.toString()
         val uf = binding.editTextUf.text.toString()
@@ -123,12 +127,12 @@ class StudentRegistrationFragment : Fragment() {
         val shift = binding.autoCompleteShift.text.toString()
         val notes = binding.editTextNotes.text.toString()
 
-        if (fullName.isBlank() || dateOfBirth.isBlank() || cep.isBlank() || logradouro.isBlank() || bairro.isBlank() || cidade.isBlank() || uf.isBlank() || guardianName.isBlank() || schoolName.isBlank() || shift.isBlank()) {
+        if (fullName.isBlank() || dateOfBirth.isBlank() || cep.isBlank() || logradouro.isBlank() || numero.isBlank() || bairro.isBlank() || cidade.isBlank() || uf.isBlank() || guardianName.isBlank() || schoolName.isBlank() || shift.isBlank()) {
             Toast.makeText(requireContext(), getString(R.string.fill_required_fields), Toast.LENGTH_SHORT).show()
             return
         }
 
-        viewModel.saveStudent(fullName, dateOfBirth, cep, logradouro, bairro, cidade, uf, guardianName, schoolName, shift, notes)
+        viewModel.saveStudent(fullName, dateOfBirth, cep, logradouro, numero, complemento, bairro, cidade, uf, guardianName, schoolName, shift, notes)
     }
 
     override fun onDestroyView() {

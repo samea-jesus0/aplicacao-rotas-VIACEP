@@ -40,7 +40,15 @@ class StudentAdapter(private val listener: OnItemClickListener) :
         fun bind(student: Student) {
             binding.textViewStudentName.text = student.fullName
             binding.textViewStudentDob.text = student.dateOfBirth
-            binding.textViewStudentAddress.text = "${student.logradouro}, ${student.bairro}, ${student.cidade} - ${student.uf}"
+
+            val address = StringBuilder()
+            address.append("${student.logradouro}, ${student.numero}")
+            if (student.complemento?.isNotBlank() == true) {
+                address.append(" - ${student.complemento}")
+            }
+            address.append("\n${student.bairro}, ${student.cidade} - ${student.uf}")
+
+            binding.textViewStudentAddress.text = address.toString()
             binding.textViewStudentShift.text = student.shift
         }
 

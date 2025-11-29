@@ -20,6 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
+        android:backgroundTint="@color/purple_200"
         android:src="@drawable/ic_plus"
         app:contentDescription="@string/add_funcionario" />
 
