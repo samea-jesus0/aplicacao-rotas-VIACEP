@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="?attr/colorSurface"
+    tools:context=".ui.schoolregistration.SchoolRegistrationFragment">
+
+    <!-- Nome da escola -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_school_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/school_name"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:boxStrokeColor="#e2a9f1"
+        app:hintTextColor="#e2a9f1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_school_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?android:attr/textColorPrimary"
+            android:hint="@string/school_name_hint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Endereço -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_school_address"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="@string/school_address"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:boxStrokeColor="#e2a9f1"
+        app:hintTextColor="#e2a9f1"
+        app:layout_constraintTop_toBottomOf="@id/text_input_layout_school_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_school_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?android:attr/textColorPrimary"
+            android:hint="@string/school_address_hint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Telefone da secretaria -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_secretary_phone"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="@string/secretary_phone"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:boxStrokeColor="#e2a9f1"
+        app:hintTextColor="#e2a9f1"
+        app:layout_constraintTop_toBottomOf="@id/text_input_layout_school_address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_secretary_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textColor="?android:attr/textColorPrimary"
+            android:hint="@string/secretary_phone_hint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Nome do contato -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_contact_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="@string/school_contact_name"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:boxStrokeColor="#e2a9f1"
+        app:hintTextColor="#e2a9f1"
+        app:layout_constraintTop_toBottomOf="@id/text_input_layout_secretary_phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?android:attr/textColorPrimary"
+            android:hint="@string/school_contact_name_hint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Botão salvar -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_save_school"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="#e2a9f1"
+        app:cornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_input_layout_contact_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

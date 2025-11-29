@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">rotasEscolares</string>
+    <string name="navigation_drawer_open">Abrir menu de navegação</string>
+    <string name="navigation_drawer_close">Fechar menu de navegação</string>
+    <string name="nav_header_title">Safe Ride</string>
+    <string name="nav_header_subtitle">Tenha uma ótima viagem!</string>
+    <string name="nav_header_desc">Cabeçalho da navegação</string>
+    <string name="action_settings">Configurações</string>
+
+    <string name="menu_home">Início</string>
+    <string name="menu_gallery">Galeria</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_student_management">Controle de Estudantes</string>
+    <string name="menu_guardian_management">Controle de Familiares</string>
+    <string name="menu_school_management">Controle de Escolas</string>
+    <string name="menu_class_management">Controle de Turmas</string>
+    <string name="menu_trip_control">Controle de Viagem</string>
+
+    <string name="view_daily_route">Rota Diária</string>
+    <string name="class_student_list">Lista de Alunos da Turma</string>
+    <string name="confirm_attendance">Confirmar presença</string>
+    <string name="my_classes">Minhas Turmas</string>
+    <string name="registrations">Alunos</string>
+    <string name="guardians">Familiares</string>
+    <string name="schools">Escolas</string>
+    <string name="funcionarios">Funcionários</string>
+    <string name="add_funcionario">Adicionar Funcionário</string>
+
+    <string name="add_class">Adicionar Turma</string>
+    <string name="add_school">Adicionar Escola</string>
+    <string name="add_student">Adicionar Aluno</string>
+    <string name="class_name">Nome da Turma</string>
+    <string name="shift">Turno</string>
+    <string name="select_students">Selecionar Alunos</string>
+    <string name="save">Salvar</string>
+    <string name="school_name">Nome da Escola</string>
+    <string name="school_address">Endereço da Escola</string>
+    <string name="secretary_phone">Telefone da Secretaria</string>
+    <string name="school_contact_name">Nome do Contato</string>
+    <string name="school_name_hint">Digite o nome da escola</string>
+    <string name="school_address_hint">Ex: Av. da Educação, 456, Cidade</string>
+    <string name="secretary_phone_hint">(XX) XXXX-XXXX</string>
+    <string name="school_contact_name_hint">Ex: Coordenadora Joana</string>
+    <string name="options">Opções</string>
+
+    <string name="students">Alunos</string>
+    <string name="search_student">Pesquisar aluno</string>
+    <string name="full_name">Nome Completo</string>
+    <string name="date_of_birth">Data de Nascimento</string>
+    <string name="full_address">Endereço Completo</string>
+    <string name="student_photo">Foto do Aluno</string>
+    <string name="select_guardian">Selecionar Responsável</string>
+    <string name="select_school">Selecionar Escola</string>
+    <string name="notes">Observações</string>
+    <string name="full_name_hint">Digite o nome completo do Responsavel</string>
+    <string name="date_of_birth_hint">DD/MM/AAAA</string>
+    <string name="full_address_hint">Ex: Rua Principal, 123, Cidade</string>
+    <string name="select_guardian_hint">Pesquisar por nome ou CPF</string>
+    <string name="select_school_hint">Pesquisar pelo nome da escola</string>
+    <string name="notes_hint">Ex: Alergias, condições especiais</string>
+
+    <string name="guardian_registration">Cadastro de Responsável</string>
+    <string name="cpf">CPF</string>
+    <string name="primary_phone">Telefone Principal</string>
+    <string name="secondary_phone">Telefone Secundário</string>
+    <string name="email">Email</string>
+    <string name="relationship">Parentesco</string>
+    <string name="cpf_hint">Digite os 11 dígitos do CPF</string>
+    <string name="primary_phone_hint">(XX) XXXXX-XXXX</string>
+    <string name="secondary_phone_hint">(XX) XXXXX-XXXX (Opcional)</string>
+    <string name="email_hint">exemplo@email.com</string>
+    <string name="relationship_hint">Ex: Pai, Mãe, Responsável</string>
+
+    <string name="trip_control_title">Controle de Viagem</string>
+    <string name="shift_morning">Manhã</string>
+    <string name="shift_afternoon">Tarde</string>
+    <string name="shift_night">Noite</string>
+    <string name="reset_trip">Reiniciar Viagem</string>
+
+    <string name="edit">Editar</string>
+    <string name="delete">Deletar</string>
+    <string name="options_menu">Opções</string>
+
+    <string name="class_saved_successfully">Turma salva com sucesso</string>
+    <string name="fill_required_fields">Por favor, preencha todos os campos obrigatórios</string>
+    <string name="invalid_school">Escola selecionada inválida</string>
+    <string name="guardian_saved_successfully">Responsável salvo com sucesso</string>
+    <string name="school_saved_successfully">Escola salva com sucesso</string>
+    <string name="student_saved_successfully">Aluno salvo com sucesso</string>
+    <string name="invalid_guardian_or_school">Responsável ou escola selecionada inválidos</string>
+    <string name="select_shift_hint">Selecione um turno</string>
+
+    <string-array name="shifts">
+        <item>Manhã</item>
+        <item>Tarde</item>
+        <item>Noite</item>
+    </string-array>
+    <string name="school">Escola</string>
+</resources>

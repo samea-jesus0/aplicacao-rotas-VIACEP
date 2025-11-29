@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.rotasescolares.ui.login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/nav_home"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.rotasescolares.ui.registration.RegistrationFragment"
+        android:label="Registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registrationFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.rotasescolares.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_classManagementFragment"
+            app:destination="@id/classManagementFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_studentManagementFragment"
+            app:destination="@id/studentManagementFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_guardianManagementFragment"
+            app:destination="@id/guardianManagementFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_schoolManagementFragment"
+            app:destination="@id/schoolManagementFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_tripControlFragment"
+            app:destination="@id/tripControlFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_funcionarioManagementFragment"
+            app:destination="@id/funcionarioManagementFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/classManagementFragment"
+        android:name="com.example.rotasescolares.ui.classmanagement.ClassManagementFragment"
+        android:label="Gerenciamento de Turmas"
+        tools:layout="@layout/fragment_class_management" >
+        <action
+            android:id="@+id/action_classManagementFragment_to_classRegistrationFragment"
+            app:destination="@id/classRegistrationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/classRegistrationFragment"
+        android:name="com.example.rotasescolares.ui.classregistration.ClassRegistrationFragment"
+        android:label="Cadastro de Turma"
+        tools:layout="@layout/fragment_class_registration" >
+        <argument
+            android:name="classId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/schoolRegistrationFragment"
+        android:name="com.example.rotasescolares.ui.schoolregistration.SchoolRegistrationFragment"
+        android:label="Cadastro de Escola"
+        tools:layout="@layout/fragment_school_registration" >
+        <argument
+            android:name="schoolId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/studentManagementFragment"
+        android:name="com.example.rotasescolares.ui.studentmanagement.StudentManagementFragment"
+        android:label="Gerenciamento de Alunos"
+        tools:layout="@layout/fragment_student_management" >
+        <action
+            android:id="@+id/action_studentManagementFragment_to_studentRegistrationFragment"
+            app:destination="@id/studentRegistrationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/studentRegistrationFragment"
+        android:name="com.example.rotasescolares.ui.studentregistration.StudentRegistrationFragment"
+        android:label="Cadastro de Aluno"
+        tools:layout="@layout/fragment_student_registration" >
+        <argument
+            android:name="studentId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/guardianManagementFragment"
+        android:name="com.example.rotasescolares.ui.guardianmanagement.GuardianManagementFragment"
+        android:label="Gerenciamento de Responsáveis"
+        tools:layout="@layout/fragment_guardian_management" >
+        <action
+            android:id="@+id/action_guardianManagementFragment_to_guardianRegistrationFragment"
+            app:destination="@id/guardianRegistrationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/guardianRegistrationFragment"
+        android:name="com.example.rotasescolares.ui.guardianregistration.GuardianRegistrationFragment"
+        android:label="Cadastro de Responsável"
+        tools:layout="@layout/fragment_guardian_registration" >
+        <argument
+            android:name="guardianId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/schoolManagementFragment"
+        android:name="com.example.rotasescolares.ui.schoolmanagement.SchoolManagementFragment"
+        android:label="Gerenciamento de Escolas"
+        tools:layout="@layout/fragment_school_management" >
+        <action
+            android:id="@+id/action_schoolManagementFragment_to_schoolRegistrationFragment"
+            app:destination="@id/schoolRegistrationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tripControlFragment"
+        android:name="com.example.rotasescolares.ui.tripcontrol.TripControlFragment"
+        android:label="Controle de Viagem"
+        tools:layout="@layout/fragment_trip_control" />
+
+    <fragment
+        android:id="@+id/funcionarioManagementFragment"
+        android:name="com.example.rotasescolares.ui.funcionariomanagement.FuncionarioManagementFragment"
+        android:label="Gerenciamento de Funcionários"
+        tools:layout="@layout/fragment_funcionario_management">
+        <action
+            android:id="@+id/action_funcionarioManagementFragment_to_funcionarioRegistrationFragment"
+            app:destination="@id/funcionarioRegistrationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/funcionarioRegistrationFragment"
+        android:name="com.example.rotasescolares.ui.funcionarioregistration.FuncionarioRegistrationFragment"
+        android:label="Cadastro de Funcionário"
+        tools:layout="@layout/fragment_funcionario_registration">
+        <argument
+            android:name="funcionarioId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+    </fragment>
+
+</navigation>

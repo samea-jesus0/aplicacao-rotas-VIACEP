@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/studentManagementFragment"
+            android:icon="@drawable/ic_student"
+            android:title="@string/menu_student_management" />
+        <item
+            android:id="@+id/guardianManagementFragment"
+            android:icon="@drawable/ic_guardian"
+            android:title="@string/menu_guardian_management" />
+        <item
+            android:id="@+id/schoolManagementFragment"
+            android:icon="@drawable/ic_school"
+            android:title="@string/menu_school_management" />
+        <item
+            android:id="@+id/classManagementFragment"
+            android:icon="@drawable/ic_class"
+            android:title="@string/menu_class_management" />
+        <item
+            android:id="@+id/tripControlFragment"
+            android:icon="@drawable/ic_trip"
+            android:title="@string/menu_trip_control" />
+    </group>
+</menu>
