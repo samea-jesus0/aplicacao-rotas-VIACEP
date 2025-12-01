@@ -18,6 +18,7 @@
             android:id="@+id/text_view_funcionario_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/blueeee"
             android:textStyle="bold"
             android:textAppearance="?attr/textAppearanceSubtitle1" />
 
@@ -25,12 +26,14 @@
             android:id="@+id/text_view_funcionario_cargo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/blueeee"
             android:layout_marginTop="4dp"
             android:textAppearance="?attr/textAppearanceBody2" />
 
         <TextView
             android:id="@+id/text_view_funcionario_turno"
             android:layout_width="wrap_content"
+            android:textColor="@color/blueeee"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:textAppearance="?attr/textAppearanceBody2" />
