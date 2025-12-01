@@ -30,15 +30,10 @@ O projeto foi construído seguindo as práticas modernas de desenvolvimento Andr
 
 ## 3. Tecnologias e Arquitetura
 
-O projeto foi estruturado com base na arquitetura **MVVM (Model-View-ViewModel)**, que promove a separação de responsabilidades e facilita a manutenção e testabilidade do código.
-
 - **Linguagem:** **Kotlin**.
-- **Arquitetura:** MVVM.
 - **Componentes de Arquitetura do Android:**
   - **ViewModel:** Armazena e gerencia os dados relacionados à UI, sobrevivendo a mudanças de configuração (como rotação de tela).
-  - **LiveData:** Funciona como um observador que notifica a UI sobre alterações nos dados (por exemplo, quando uma lista de alunos é carregada do banco de dados).
   - **Room:** Biblioteca de persistência de dados que oferece uma abstração sobre o SQLite para permitir um acesso mais robusto ao banco de dados, com verificação de consultas em tempo de compilação.
-  - **Navigation Component:** Gerencia a navegação entre as telas (Fragments) de forma centralizada e visual.
 - **UI (Interface do Usuário):**
   - **View Binding:** Substitui o `findViewById` para fornecer uma maneira mais segura e concisa de interagir com as views.
   - **Material Design Components:** Utilizado para criar uma interface moderna e consistente com as diretrizes do Android.
@@ -46,7 +41,6 @@ O projeto foi estruturado com base na arquitetura **MVVM (Model-View-ViewModel)*
 - **Rede:**
   - **Retrofit:** Cliente HTTP type-safe para Android e Java, usado para realizar as chamadas à API do ViaCEP.
   - **GSON:** Biblioteca para converter objetos Java (e Kotlin) em sua representação JSON e vice-versa.
-- **Coroutines:** Utilizadas para gerenciar operações assíncronas, como chamadas de rede e acesso ao banco de dados, de forma a não bloquear a thread principal e manter a responsividade do app.
 
 ---
 
@@ -69,12 +63,8 @@ app/src/main/java/com/example/rotasescolares/
 │
 ├── ui/                  # Pacote principal da camada de apresentação (View)
 │   ├── studentmanagement/ # Tela de listagem de alunos
-│   │   ├── StudentAdapter.kt
-│   │   └── StudentManagementFragment.kt
 │   │
 │   ├── studentregistration/ # Tela de cadastro de aluno
-│   │   ├── StudentRegistrationFragment.kt
-│   │   └── StudentRegistrationViewModel.kt
 │   │
 │   └── ... (outros pacotes de UI como schoolmanagement, tripcontrol, etc.)
 │
@@ -94,7 +84,6 @@ app/src/main/java/com/example/rotasescolares/
 - **Telas de Gerenciamento (Alunos, Escolas, etc.):**
   - Exibem uma lista de itens cadastrados usando um `RecyclerView`.
   - Cada item da lista possui um menu de opções (representado por três pontos verticais) que permite **editar** ou **excluir** o registro.
-  - Um botão de adição (FAB) permite navegar para a tela de cadastro correspondente.
 
 - **Telas de Cadastro (Alunos, Escolas, etc.):**
   - Apresentam formulários com campos de texto e menus suspensos (`AutoCompleteTextView`) para inserir ou editar dados.
@@ -104,7 +93,7 @@ app/src/main/java/com/example/rotasescolares/
 - **Tela de Controle de Viagem:**
   - Permite ao motorista selecionar um turno (manhã, tarde, noite).
   - Exibe os alunos do turno selecionado em cards.
-  - O status de cada aluno é indicado por uma cor e um texto (Aguardando, A Bordo).
+  - O status de cada aluno é indicado por textto.
   - Clicar em um aluno altera seu status, simulando o processo de embarque e desembarque.
 
 ---
