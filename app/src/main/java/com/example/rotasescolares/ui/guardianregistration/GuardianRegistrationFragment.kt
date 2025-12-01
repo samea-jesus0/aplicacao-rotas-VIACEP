@@ -51,7 +51,7 @@ class GuardianRegistrationFragment : Fragment() {
             }
         }
 
-        binding.fabSaveGuardian.setOnClickListener {
+        binding.buttonSaveGuardian.setOnClickListener {
             saveGuardian()
         }
     }

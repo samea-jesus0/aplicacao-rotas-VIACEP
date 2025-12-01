@@ -29,15 +29,17 @@
             android:id="@+id/text_input_layout_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
             android:hint="@string/full_name"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:textColorHint="@color/blueeee"
+            android:backgroundTint="@color/white"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:layout_constraintTop_toBottomOf="@id/image_view_student_photo"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_name"
+                android:textColor="@color/blueeee"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>
@@ -48,14 +50,17 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
+            android:textColorHint="@color/blueeee"
+            android:backgroundTint="@color/white"
             android:hint="@string/date_of_birth"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:layout_constraintTop_toBottomOf="@id/text_input_layout_name"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_dob"
+                android:textColor="@color/blueeee"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>
@@ -66,8 +71,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
+            android:textColorHint="@color/blueeee"
+            android:backgroundTint="@color/white"
             android:hint="CEP"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:layout_constraintTop_toBottomOf="@id/text_input_layout_dob"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
@@ -76,6 +83,7 @@
                 android:id="@+id/edit_text_cep"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/blueeee"
                 android:inputType="number"
                 android:maxLength="8"/>
         </com.google.android.material.textfield.TextInputLayout>
@@ -85,9 +93,11 @@
             android:id="@+id/text_input_layout_logradouro"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textColorHint="@color/blueeee"
+            android:backgroundTint="@color/white"
             android:layout_marginTop="12dp"
             android:hint="Logradouro"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:layout_constraintTop_toBottomOf="@id/text_input_layout_cep"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
@@ -95,6 +105,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_logradouro"
                 android:layout_width="match_parent"
+                android:textColor="@color/blueeee"
                 android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -103,9 +114,11 @@
             android:id="@+id/text_input_layout_numero"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textColorHint="@color/blueeee"
+            android:backgroundTint="@color/white"
             android:layout_marginTop="12dp"
             android:hint="Número"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:layout_constraintTop_toBottomOf="@id/text_input_layout_logradouro"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/guideline">
@@ -113,6 +126,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_numero"
                 android:layout_width="match_parent"
+                android:textColor="@color/blueeee"
                 android:layout_height="wrap_content"
                 android:inputType="number"/>
         </com.google.android.material.textfield.TextInputLayout>
@@ -123,15 +137,18 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
+            android:textColorHint="@color/blueeee"
+            android:backgroundTint="@color/white"
             android:layout_marginStart="8dp"
             android:hint="Complemento"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:layout_constraintTop_toBottomOf="@id/text_input_layout_logradouro"
             app:layout_constraintStart_toEndOf="@id/guideline"
             app:layout_constraintEnd_toEndOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_complemento"
+                android:textColor="@color/blueeee"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>
@@ -149,14 +166,17 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
+            android:textColorHint="@color/blueeee"
+            android:backgroundTint="@color/white"
             android:hint="Bairro"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:layout_constraintTop_toBottomOf="@id/text_input_layout_numero"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_bairro"
+                android:textColor="@color/blueeee"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>
@@ -166,9 +186,11 @@
             android:id="@+id/text_input_layout_cidade"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
             android:layout_marginTop="12dp"
+            android:textColorHint="@color/blueeee"
             android:hint="Cidade"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:layout_constraintTop_toBottomOf="@id/text_input_layout_bairro"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
@@ -176,6 +198,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_cidade"
                 android:layout_width="match_parent"
+                android:textColor="@color/blueeee"
                 android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -185,8 +208,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
+            android:textColorHint="@color/blueeee"
+            android:backgroundTint="@color/white"
             android:hint="UF"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:layout_constraintTop_toBottomOf="@id/text_input_layout_cidade"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
@@ -195,6 +220,7 @@
                 android:id="@+id/edit_text_uf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/blueeee"
                 android:maxLength="2"
                 android:inputType="text"/>
         </com.google.android.material.textfield.TextInputLayout>
@@ -205,6 +231,8 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/white"
             android:layout_marginTop="12dp"
             android:hint="@string/select_guardian"
             app:layout_constraintTop_toBottomOf="@id/text_input_layout_uf"
@@ -215,6 +243,7 @@
                 android:id="@+id/auto_complete_guardian"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/blueeee"
                 android:inputType="none"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -224,6 +253,8 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/white"
             android:layout_marginTop="12dp"
             android:hint="@string/select_school"
             app:layout_constraintTop_toBottomOf="@id/text_input_layout_guardian"
@@ -232,6 +263,7 @@
 
             <AutoCompleteTextView
                 android:id="@+id/auto_complete_school"
+                android:textColor="@color/blueeee"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="none"/>
@@ -243,6 +275,8 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/white"
             android:layout_marginTop="12dp"
             android:hint="@string/shift"
             app:layout_constraintTop_toBottomOf="@id/text_input_layout_school"
@@ -253,15 +287,18 @@
                 android:id="@+id/auto_complete_shift"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/blueeee"
                 android:inputType="none"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Observações -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/text_input_layout_notes"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textColorHint="@color/blueeee"
+            android:backgroundTint="@color/white"
             android:layout_marginTop="12dp"
             android:hint="@string/notes"
             app:layout_constraintTop_toBottomOf="@id/text_input_layout_shift"
@@ -271,6 +308,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_notes"
                 android:layout_width="match_parent"
+                android:textColor="@color/blueeee"
                 android:layout_height="120dp"
                 android:gravity="top"/>
         </com.google.android.material.textfield.TextInputLayout>
@@ -282,6 +320,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="@string/save"
+            android:backgroundTint="@color/blueeee"
+            android:textColor="@color/white"
             app:layout_constraintTop_toBottomOf="@id/text_input_layout_notes"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

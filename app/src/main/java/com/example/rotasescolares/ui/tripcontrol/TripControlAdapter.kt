@@ -33,7 +33,7 @@ class TripControlAdapter(private val onStudentClicked: (Student) -> Unit) :
 
         fun bind(student: Student) {
             binding.textViewStudentName.text = student.fullName
-            binding.textViewAddress.text = "${student.logradouro}, ${student.bairro}, ${student.cidade} - ${student.uf}"
+            binding.textViewAddress.text = "${student.logradouro}, ${student.numero}, ${student.bairro}, ${student.cidade} - ${student.uf}"
 
             when (student.status) {
                 StudentTripStatus.WAITING -> {

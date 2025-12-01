@@ -20,8 +20,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:backgroundTint="@color/blueeee"
         android:layout_margin="16dp"
-        android:src="@drawable/ic_plus" />
+        android:backgroundTint="@color/blueeee"
+        android:src="@drawable/ic_plus"
+        app:tint="@android:color/white" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

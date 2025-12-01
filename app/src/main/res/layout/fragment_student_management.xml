@@ -8,7 +8,7 @@
     tools:context=".ui.studentmanagement.StudentManagementFragment">
 
     <com.google.android.material.appbar.AppBarLayout
-        android:background="@color/white"
+        android:background="@color/blueeee"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -16,7 +16,8 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:title="@string/students">
+            app:title="@string/students"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
             <androidx.appcompat.widget.SearchView
                 android:id="@+id/search_view"
@@ -42,6 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
+        android:backgroundTint="@color/blueeee"
         android:contentDescription="@string/add_student"
         android:src="@drawable/ic_plus"
         app:tint="@android:color/white" />
