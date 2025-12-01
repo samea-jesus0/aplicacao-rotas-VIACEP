@@ -30,8 +30,6 @@ O projeto foi construído seguindo as práticas modernas de desenvolvimento Andr
 
 ## 3. Tecnologias e Arquitetura
 
-O projeto foi estruturado com base na arquitetura **MVVM (Model-View-ViewModel)**, que promove a separação de responsabilidades e facilita a manutenção e testabilidade do código.
-
 - **Linguagem:** **Kotlin**.
 - **Componentes de Arquitetura do Android:**
   - **ViewModel:** Armazena e gerencia os dados relacionados à UI, sobrevivendo a mudanças de configuração (como rotação de tela).
